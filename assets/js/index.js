@@ -31,16 +31,16 @@ function getUserInfo () {
             }
             renderAvatar(res.data)
         },
-        complete: function (res) {
-            // console.log('执行了complete 回调： ')
-            // console.log(res);
-            // responseJSON  拿到服务器响应回来的阿数据
-            if (res.responseJSON.status === 1 && res.responseJSON.
-                message === '身份认证失败！') {
-                localStorage.removeItem('token')
-                location.href = '/login.html'
-            }
-        }
+        // complete: function (res) {
+        //     // console.log('执行了complete 回调： ')
+        //     // console.log(res);
+        //     // responseJSON  拿到服务器响应回来的阿数据
+        //     if (res.responseJSON.status === 1 && res.responseJSON.
+        //         message === '身份认证失败！') {
+        //         localStorage.removeItem('token')
+        //         location.href = '/login.html'
+        //     }
+        // }
     })
 }
 
